@@ -8,7 +8,7 @@ An interactive data visualization dashboard built using **D3.js** to explore sea
 
 ## Live Demo
 
-[View Dashboard](https://your-username.github.io/flu-vaccination-dashboard) 
+[View Dashboard](https://rfaerber1.github.io/CSE-478-Assignment/) 
 
 ---
 
