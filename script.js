@@ -35,7 +35,7 @@ function addTitle(svg, text, x, y, anchor = "middle", rotation = 0) {
 
 // TODO: Load CSV file using d3.csv
 // loading and parsing the csv data
-d3.csv("../data/cleaned_data.csv", d3.autoType).then(data => {
+d3.csv("cleaned_data.csv", d3.autoType).then(data => {
     const areas = [...new Set(data.map(d => d.Geography))].sort();
     const years = [...new Set(data.map(d => d.Year))].sort();
     const  allEthnicities = [...new Set(data.map(d => d.Dimension))].sort();
