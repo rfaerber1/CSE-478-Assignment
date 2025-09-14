@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8" />
+  <title>Seasonal Influenza Vaccination Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+  
+<body>
+  <h1>Seasonal Influenza Vaccination Dashboard</h1>
+  <div class="setup">
+    <div class="controls">
+        <div>
+            <label for="areaSelect">Area:</label>
+            <select id="areaSelect"></select>
+        </div>
+
+        <div>
+            <label for="yearSelect">Year:</label>
+            <select id="yearSelect"></select>
+        </div>
+
+        <div>
+          <label for="estimateSelect">Estimate By Year:</label>
+          <select id="estimateSelect"></select>
+        </div>
+    
+        <div>
+            <p>Race/Ethnicity:</p>
+            <div id="buttonContainer"></div>
+        </div>
+
+        <svg id="legend"></svg>
+    </div>
+  </div>
+    
+  
+  <div class="dashboard-section">
+    <div class="dashboard">
+      <div class="vis">
+      <svg id="lineYearChart" width="525" height="410"></svg>
+      </div>
+      <div class="vis">
+        <svg id="lineChart" width="425" height="410"></svg>
+        <svg id="chart" width="425" height="410"></svg>
+      </div>
+    </div>
+  </div>
+
+  <h3> Data from <a href="https://catalog.data.gov/dataset/influenza-vaccination-coverage-for-all-ages-6-months-bbec0">https://catalog.data.gov/dataset/influenza-vaccination-coverage-for-all-ages-6-months-bbec0</a></h3>
+  <script src="script.js"></script>
+</body>
+  
+</html>

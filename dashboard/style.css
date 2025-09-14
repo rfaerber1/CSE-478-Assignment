@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: whitesmoke;
+  }
+
+  h1 {
+    background-color: #0055B8;
+    color: white;
+    padding: 15px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+  }
+
+  .setup {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    
+    background-color: whitesmoke;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    margin-top: 15px;
+  }
+  .controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .controls div {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    height: 100%;
+    width: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+  }
+  #buttonContainer {
+    border: 0.25px, solid, #4F4F4F;
+  }
+  #buttonContainer button {
+    border: 0.25px, solid, #4F4F4F;
+    padding: 2px;
+  }
+  #legend {
+    padding: 0px;
+    width: 315px;
+    height: 120px;
+    /*border: 1px black solid;*/
+  }
+  
+  .dashboard-section {
+    display: flex;
+    justify-content: flex-start;
+    margin: 30px;
+  }
+  .dashboard {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: fit-content;
+  }
+  @media (max-width: 1550px) {
+    .dashboard {
+      padding: 10px;
+      background-color: hsl(213, 50%, 90%);
+    }
+    .vis {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .dashboard-section {
+      justify-content: center;
+    }
+    .dashboard {
+      justify-content: center;
+    }
+  }
+  .vis {
+    display: flex;
+    gap: 20px;
+  }
+  .dashboard svg {
+    border: 2px #0B4778 solid;
+    background-color: white;
+  }
+
+  h3 {
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 50px;
+
+    white-space: normal;
+    overflow-wrap: break-word; 
+    word-break: break-word;
+  }
+
+  .axis line {
+    stroke: #ccc;
+  }
+  .axis text {
+    font-size: 12px;
+  }
+  .tooltip {
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+  }
+  
