@@ -19,8 +19,8 @@ An interactive data visualization dashboard built using **D3.js** to explore sea
 - **Estimate Type** – Toggle between *Average* or *Maximum* estimate
 - **Race/Ethnicity Filters** – Select/deselect categories dynamically
 - **Three Coordinated Views**:
-  - **Line Chart** – Monthly estimates during selected season
   - **Yearly Trends Line Chart** – Estimates across multiple years
+  - **Line Chart** – Monthly estimates during selected season
   - **Bar Chart** – Monthly sample sizes by group
 - **Tooltips** & dynamic **legend**
 - Relatively responsive layout with media queries
