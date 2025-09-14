@@ -2,7 +2,7 @@
 
 An interactive data visualization dashboard built using **D3.js** to explore seasonal influenza vaccination coverage across the United States. Users can filter by state, flu season, race/ethnicity, and estimate type to view monthly trends, yearly comparisons, and sample sizes.
 
-> Created for Arizona State University's **CSE 478: Data Visualization** course — received 100% on the assignment.
+> Created for Arizona State University's **CSE 478: Foundations of Data Visualization** course — received 100% on the assignment.
 
 ---
 
@@ -23,28 +23,34 @@ An interactive data visualization dashboard built using **D3.js** to explore sea
   - **Yearly Trends Line Chart** – Estimates across multiple years
   - **Bar Chart** – Monthly sample sizes by group
 - **Tooltips** & dynamic **legend**
-- Responsive layout with media queries
+- Relatively responsive layout with media queries
 
 ---
 
 ## Project Structure
 
+```
 /project-root
 │
-├── dashboard/
-│   └── index.html, scripts.js, etc.
-├── data/
+├── dashboard/                   # Front-end dashboard built with D3.js
+│   ├── index.html
+│   ├── scripts.js
+│   └── styles.css              # (or any other relevant files)
+│
+├── data/                        # Raw and cleaned datasets
 │   ├── Influenza_Vaccination_Coverage.csv
 │   └── cleaned_data.csv
-├── notebooks/
+│
+├── notebooks/                   # Data preprocessing and exploration
 │   └── data_preprocessing.ipynb
-├── README.md
-
+│
+└── README.md                    # Project overview
+```
 ---
 
 ## Dataset
 
-- Source: [Data.gov - Influenza Vaccination Coverage](https://catalog.data.gov/dataset/influenza-vaccination-coverage-for-all-ages-6-months-bbec0)
+- Source: [Data.gov - Influenza Vaccination Coverage for All Ages (6+ Months)](https://catalog.data.gov/dataset/influenza-vaccination-coverage-for-all-ages-6-months-bbec0)
 - Data includes estimates by:
   - State
   - Flu season/year
@@ -64,13 +70,5 @@ The raw dataset from the CDC included multiple dimensions, including region-leve
 - Focused on the “Race and Ethnicity” dimension
 - Exported a cleaned version in both CSV and JSON formats for use in the D3.js dashboard
 
-[View the preprocessing notebook](data_preprocessing.ipynb)
+[View the preprocessing notebook](https://github.com/rfaerber1/CSE-478-Assignment/blob/main/notebooks/CSE_478_dashboard_data_pre_processing.ipynb)
 
----
-
-## Getting Started
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/your-username/flu-vaccination-dashboard.git
-   cd flu-vaccination-dashboard
